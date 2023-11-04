@@ -29,6 +29,7 @@ Contract deployed to 0xf7E7d7dEF551A7C16AA4Baf3caCC1A5D1B3B9060```
 
 * **CastVote.ts**
 This script casts a voteand takes two arguments: the address of the voting contract and the proposal number. For example:
+
 ```bun ts-node scripts/CastVote.ts 0xf7E7d7dEF551A7C16AA4Baf3caCC1A5D1B3B9060 1```
 Sample output:
 ```
