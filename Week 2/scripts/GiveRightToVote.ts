@@ -24,17 +24,16 @@ async function main() {
   const ballotContract = ballotFactory.attach(contractAddress) as Ballot;
 
   try {
-    const tx = await ballotContract.giveRightToVote(newVotingAddress);
-    await tx.wait();
-
     const voter = await ballotContract.voters(newVotingAddress);
 
     if (voter.weight) {
-      console.log(
-        `Address has right to vote now, transaction hash: ${tx.hash}`
-      );
+      console.log("Address already has voting rights");
     } else {
-      throw new Error("Something went wrong!");
+      const tx = await ballotContract.giveRightToVote(newVotingAddress);
+      await tx.wait();
+      console.log(
+        `Address has been given voting rights, transaction hash: ${tx.hash}`
+      );
     }
   } catch (error: any) {
     console.log(error.message);
