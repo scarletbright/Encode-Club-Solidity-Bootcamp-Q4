@@ -24,7 +24,7 @@ Last block number: 4630388
 Last block timestamp: 1699126008 (11/4/2023 4:26:48 PM)
 Using address 0xEfB02F2ae2f725E1f53878258Ab3B121FEAFe8f3
 Wallet balance 1.4887249238610725 ETH
-Contract deployed to 0xf7E7d7dEF551A7C16AA4Baf3caCC1A5D1B3B9060```
+Contract deployed to 0xf7E7d7dEF551A7C16AA4Baf3caCC1A5D1B3B9060
 ```
 
 * **CastVote.ts**
