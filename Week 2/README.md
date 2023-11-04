@@ -45,6 +45,7 @@ Vote count after vote: 1
 
 * **GetProposals.ts**
 This script is used to retrieve and print out proposal details from the Ballot smart contract. It requires one parameter - the address of the deployed Ballot contract:
+
 ```bun ts-node scripts/GetProposals.ts 0xf7E7d7dEF551A7C16AA4Baf3caCC1A5D1B3B9060```
 Sample output:
 ```
