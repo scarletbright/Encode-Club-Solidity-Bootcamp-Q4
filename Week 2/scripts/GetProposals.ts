@@ -40,7 +40,7 @@ async function main() {
   console.log(`Contract address: ${contractAddress}`);
 
   // Printing out the proposals
-  for (let i = 0; i < 4; i++) {
+  for (let i = 0; i < 3; i++) {
     const proposal = await ballotContract.proposals(i);
     console.log(`Proposal ${i} ${ethers.decodeBytes32String(proposal.name)}`);
   }
