@@ -59,3 +59,20 @@ Proposal 0 Proposal_1
 Proposal 1 Proposal_2
 Proposal 2 Proposal_3
 ```
+
+* **GetVoter.ts**
+This script is used to get information about a voter. It requires two parameter - the address of the deployed Ballot contract and the address of a voter:
+
+```bun ts-node scripts/GetVoter.ts 0xf7E7d7dEF551A7C16AA4Baf3caCC1A5D1B3B9060 0xEfB02F2ae2f725E1f53878258Ab3B121FEAFe8f3```
+Sample output:
+```
+Last block number: 4630454
+Last block timestamp: 1699126872 (11/4/2023 4:41:12 PM)
+Using address 0xEfB02F2ae2f725E1f53878258Ab3B121FEAFe8f3
+Wallet balance 1.487503276848949 ETH
+Getting voter information for address 0xEfB02F2ae2f725E1f53878258Ab3B121FEAFe8f3:
+0xEfB02F2ae2f725E1f53878258Ab3B121FEAFe8f3 Has voted
+0xEfB02F2ae2f725E1f53878258Ab3B121FEAFe8f3 voted 1
+0xEfB02F2ae2f725E1f53878258Ab3B121FEAFe8f3 has a voting weight of 1
+```
+
