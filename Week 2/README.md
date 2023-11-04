@@ -76,3 +76,22 @@ Getting voter information for address 0xEfB02F2ae2f725E1f53878258Ab3B121FEAFe8f3
 0xEfB02F2ae2f725E1f53878258Ab3B121FEAFe8f3 has a voting weight of 1
 ```
 
+* **GetWinningProposal.ts**
+This script is used to get information about a winning proposal. It requires one parameter - the address of the deployed Ballot contract:
+
+```bun ts-node scripts/GetWinningProposal.ts 0xf7E7d7dEF551A7C16AA4Baf3caCC1A5D1B3B9060```
+Sample output:
+```
+The winning Proposal is Proposal_2
+```
+
+* **GiveRightToVote.ts**
+This script is used to give voting rights to a certain address. It requires two parameter - the address of the deployed Ballot contract and the address of a voter you are giving rights to:
+
+```bun ts-node scripts/GiveRightToVote.ts 0xf7E7d7dEF551A7C16AA4Baf3caCC1A5D1B3B9060 0x5678.....```
+Sample output:
+```
+Address has been given voting rights, transaction hash: 0xe5f456997dd2afc899d4db1aa5aa56d1896da2e8b45abb2fdbae75b6e9210d0e
+```
+
+
