@@ -10,7 +10,7 @@
 
 ### Scripts:
 
-**DeployWithEthers.ts**
+* **DeployWithEthers.ts**
 This script deploys the contract, the arguments are propsals. For example:
 
 ```bun ts-node scripts/DeployWithEthers.ts Proposal_1 Proposal_2 Proposal_3```
@@ -27,7 +27,7 @@ Wallet balance 1.4887249238610725 ETH
 Contract deployed to 0xf7E7d7dEF551A7C16AA4Baf3caCC1A5D1B3B9060```
 ```
 
-**CastVote.ts**
+* **CastVote.ts**
 This script takes two arguments: the address of the voting contract and the proposal number. For example:
 ```bun ts-node scripts/CastVote.ts 0x1234567890abcdef 1```
 Sample output:
